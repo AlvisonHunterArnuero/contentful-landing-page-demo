@@ -3,7 +3,12 @@ import './App.css'
 import { filteredInfo } from './CustomTypes'
 import { query } from './Queries'
 import house from './assets/house.png'
-import { useSearchParams } from 'react-router-dom'
+import { Form, useSearchParams } from 'react-router-dom'
+import { Header } from './components/Header'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import CallToAction from './components/CallToAction'
+import Deals from './components/Deals'
 function App() {
   const [data, setData] = useState([])
   const [searchParams] = useSearchParams()
@@ -48,8 +53,7 @@ function App() {
     '21t4SuBA08L9J2d1WNy8Ep',
     '21t4SuBA08L9J2d1WNy8Ep',
   ]
-const idInArray = id !==null ? arrValues.includes(id) : null
-  const partnerID = idInArray ? id : '5Z5ofAOLbRL9FJWVG6C1Eo'
+  const partnerID = id !== null ? id : '5Z5ofAOLbRL9FJWVG6C1Eo'
 
   const filteredInfoArr: filteredInfo[] = data?.filter((partner) => {
     return partner['sys']['id'] === partnerID
@@ -79,19 +83,20 @@ const idInArray = id !==null ? arrValues.includes(id) : null
 
   return filteredInfoArr.length > 0 ? (
     <>
+      <Header />
       <div
         style={bgPrimaryStyle}
-        className="flex flex-row items-center justify-center"
+        className="container flex flex-row items-center justify-center"
       >
-        <div className="basis-1/2 max-h-full">
-          <div className="flex flex-col items-center justify-center">
-            <div className="mx-8 w-[560px]">
+        <div className="container my-20 mx-auto">
+          <div className="flex flex-col justify-center items-center">
+            <div className="">
               <h1 style={stylesHeaderOne} className="text-[64px] mx-auto">
                 {filteredInfoArr[0]?.slogan}
               </h1>
             </div>
-            <div className="flex flex-row items-center justify-center m-4 p-4">
-              <div className="mx-8">
+            <div className="flex flex-row items-center justify-center">
+              <div className="basis-1/2">
                 <img
                   className={photoProfileStyles}
                   src={filteredInfoArr[0]?.partnerPhoto?.url}
@@ -108,20 +113,32 @@ const idInArray = id !==null ? arrValues.includes(id) : null
           </div>
         </div>
         <div className="basis-1/2">
-          <img src={house} className="" />
+          <img src={house} className=" w-full" />
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center bg-[#1859FF]">
-        <div className="basis-1/2 max-h-full">
-          <div className="flex flex-col items-start justify-center h-96">
-            <div className="mx-8">
-              <p className="font-normal text-left text-white text-2xl">
-                Change your future without changing your address
-              </p>
-            </div>
-          </div>
+      <div className="flex flex-row items-center justify-center bg-slate-300">
+        <div className="">
+          <Contact />
         </div>
-        <div className="basis-1/2 text-white text-4xl">FORM WILL GO HERE</div>
+      </div>
+
+      <div className="flex flex-row items-center justify-center bg-gray-300">
+        <div className="">
+          <CallToAction />
+        </div>
+      </div>
+
+      <div className="flex flex-row items-center justify-center bg-sky-800">
+        <div className="">
+          <Deals />
+        </div>
+      </div>
+
+
+      <div className="flex flex-row items-center justify-center bg-blue-100">
+        <div className="">
+          <Footer />
+        </div>
       </div>
     </>
   ) : (
