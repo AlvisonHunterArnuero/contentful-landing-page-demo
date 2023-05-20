@@ -1,7 +1,7 @@
 export default function Deals() {
   return (
-    <div className="container my-24 px-6 mx-auto">
-      <section className="mb-32">
+    <div className="container px-6 mx-auto bg-indigo-200">
+      <section className="my-8">
         <div className="flex flex-wrap">
           <div className="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0">
             <div className="flex lg:py-12">
@@ -15,7 +15,7 @@ export default function Deals() {
           </div>
 
           <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
-            <div className="bg-blue-600 h-full rounded-lg p-6 lg:pl-12 text-white flex items-center text-center lg:text-left">
+            <div className="bg-neutral-800 h-full rounded-lg p-6 lg:pl-12 text-white flex items-center text-center lg:text-left">
               <div className="lg:pl-12">
                 <h2 className="text-3xl font-bold mb-6">
                   What are you waiting for?
@@ -32,7 +32,7 @@ export default function Deals() {
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                 >
-                  Sign up now
+                  Call Now!
                 </button>
               </div>
             </div>

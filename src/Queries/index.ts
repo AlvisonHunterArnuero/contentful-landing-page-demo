@@ -9,6 +9,10 @@ export const query = `
       primaryColor
       bgColor
       secondaryColor
+      summary
+      linkedin
+      github
+      title
       partnerPhoto{
         url
       }

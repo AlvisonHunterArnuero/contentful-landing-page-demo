@@ -6,6 +6,10 @@ export interface filteredInfo {
   primaryColor?: string
   bgColor?: string
   secondaryColor?: string
+  summary?: string
+  linkedin?: string
+  github?: string
+  title?: string
   sys?: { id: string }
   partnerPhoto?: { url: string }
 }
