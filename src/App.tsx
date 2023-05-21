@@ -54,7 +54,7 @@ function App() {
   })
 
   return filteredInfoArr.length > 0 ? (
-    <div className="container mx-auto border border-e-gray-200 w-screen flex flex-col items-center">
+    <div className="container mx-auto">
       <Hero filteredInformation={filteredInfoArr} />
       <Header />
       <Deals />

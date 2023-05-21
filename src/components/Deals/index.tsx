@@ -1,9 +1,9 @@
 export default function Deals() {
   return (
-    <div className="container px-6 mx-auto bg-indigo-200">
-      <section className="my-8">
+    <div className="container mx-auto bg-indigo-200 px-8">
+      <section className="py-6">
         <div className="flex flex-wrap">
-          <div className="grow-0 shrink-0 basis-auto w-full lg:w-5/12 mb-12 lg:mb-0">
+          <div className="mb-12 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12">
             <div className="flex lg:py-12">
               <img
                 src="https://mdbootstrap.com/img/new/standard/people/035.jpg"
@@ -14,10 +14,10 @@ export default function Deals() {
             </div>
           </div>
 
-          <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
-            <div className="bg-neutral-800 h-full rounded-lg p-6 lg:pl-12 text-white flex items-center text-center lg:text-left">
+          <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+            <div className="flex h-full items-center rounded-lg bg-neutral-800 p-6 text-center text-white lg:pl-12 lg:text-left">
               <div className="lg:pl-12">
-                <h2 className="text-3xl font-bold mb-6">
+                <h2 className="mb-6 text-3xl font-bold">
                   What are you waiting for?
                 </h2>
                 <p className="mb-6 pb-2 lg:pb-0">
@@ -28,7 +28,7 @@ export default function Deals() {
                 </p>
                 <button
                   type="button"
-                  className="inline-block px-7 py-3 border-2 border-white text-white font-medium text-sm leading-snug uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                  className="inline-block rounded-full border-2 border-white px-7 py-3 text-sm font-medium uppercase leading-snug text-white transition duration-150 ease-in-out hover:bg-black focus:outline-none focus:ring-0"
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
                 >

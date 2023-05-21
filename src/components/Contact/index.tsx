@@ -1,13 +1,13 @@
 export default function Contact() {
   return (
-    <div className="container my-4 px-12 mx-auto">
-      <section className="mb-32 text-gray-800 text-center lg:text-left">
+    <div className="container mx-auto my-4 px-12">
+      <section className="mb-32 text-center text-gray-800 lg:text-left">
         <div
           className="px-6 py-12 md:px-12"
         >
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="mt-12 lg:mt-0">
-              <h1 className="text-5xl font-bold tracking-tight leading-tight mb-12">
+              <h1 className="mb-12 text-5xl font-bold leading-tight tracking-tight">
                 The best offer <br />
                 <span className="text-blue-600">for your business</span>
               </h1>
@@ -19,45 +19,45 @@ export default function Contact() {
               </p>
             </div>
             <div className="mb-12 lg:mb-0">
-              <div className="block rounded-lg shadow-lg bg-white px-6 py-12 md:px-12">
+              <div className="block rounded-lg bg-white px-6 py-12 shadow-lg md:px-12">
                 <form>
                   <div className="grid md:grid-cols-2 md:gap-6">
                     <div className="mb-6">
                       <input
                         type="text"
-                        className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        className="m-0 block w-full rounded border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition ease-in-out focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none"
                         placeholder="First name"
                       />
                     </div>
                     <div className="mb-6">
                       <input
                         type="text"
-                        className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        className="m-0 block w-full rounded border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition ease-in-out focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none"
                         placeholder="Last name"
                       />
                     </div>
                   </div>
                   <input
                     type="email"
-                    className="form-control block w-full px-3 py-1.5 mb-6 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    className="m-0 mb-6 block w-full rounded border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition ease-in-out focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none"
                     placeholder="Email address"
                   />
                   <input
                     type="password"
-                    className="form-control block w-full px-3 py-1.5 mb-6 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    className="m-0 mb-6 block w-full rounded border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-1.5 text-base font-normal text-gray-700 transition ease-in-out focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none"
                     placeholder="Password"
                   />
-                  <div className="form-check flex justify-center mb-6">
+                  <div className="mb-6 flex justify-center">
                     <input
-                      className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                      className="float-left mr-2 mt-1 h-4 w-4 cursor-pointer appearance-none rounded-sm border border-gray-300 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 checked:border-blue-600 checked:bg-blue-600 focus:outline-none"
                       type="checkbox"
                       value=""
                       id="flexCheckChecked"
                       checked
                     />
                     <label
-                      className="form-check-label inline-block text-gray-800"
-                      for="flexCheckChecked"
+                      className="inline-block text-gray-800"
+                      htmlFor="flexCheckChecked"
                     >
                       Subscribe to our newsletter
                     </label>
@@ -66,7 +66,7 @@ export default function Contact() {
                     type="button"
                     data-mdb-ripple="true"
                     data-mdb-ripple-color="light"
-                    className="inline-block px-6 py-2.5 mb-6 w-full bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                    className="mb-6 inline-block w-full rounded bg-blue-600 px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg"
                   >
                     Sign up
                   </button>
@@ -77,12 +77,12 @@ export default function Contact() {
                     <a
                       href="#!"
                       role="button"
-                      className="text-blue-600 hover:text-blue-700 focus:text-blue-700 action:text-blue-800 transition duration-200 ease-in-out"
+                      className="action:text-blue-800 text-blue-600 transition duration-200 ease-in-out hover:text-blue-700 focus:text-blue-700"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 320 512"
-                        className="w-4 h-4 mx-4"
+                        className="mx-4 h-4 w-4"
                       >
                         <path
                           fill="currentColor"
@@ -93,12 +93,12 @@ export default function Contact() {
                     <a
                       href="#!"
                       role="button"
-                      className="text-blue-600 hover:text-blue-700 focus:text-blue-700 action:text-blue-800 transition duration-200 ease-in-out"
+                      className="action:text-blue-800 text-blue-600 transition duration-200 ease-in-out hover:text-blue-700 focus:text-blue-700"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 488 512"
-                        className="w-4 h-4 mx-4"
+                        className="mx-4 h-4 w-4"
                       >
                         <path
                           fill="currentColor"
@@ -109,12 +109,12 @@ export default function Contact() {
                     <a
                       href="#!"
                       role="button"
-                      className="text-blue-600 hover:text-blue-700 focus:text-blue-700 action:text-blue-800 transition duration-200 ease-in-out"
+                      className="action:text-blue-800 text-blue-600 transition duration-200 ease-in-out hover:text-blue-700 focus:text-blue-700"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512"
-                        className="w-4 h-4 mx-4"
+                        className="mx-4 h-4 w-4"
                       >
                         <path
                           fill="currentColor"
@@ -125,12 +125,12 @@ export default function Contact() {
                     <a
                       href="#!"
                       role="button"
-                      className="text-blue-600 hover:text-blue-700 focus:text-blue-700 action:text-blue-800 transition duration-200 ease-in-out"
+                      className="action:text-blue-800 text-blue-600 transition duration-200 ease-in-out hover:text-blue-700 focus:text-blue-700"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 496 512"
-                        className="w-4 h-4 mx-4"
+                        className="mx-4 h-4 w-4"
                       >
                         <path
                           fill="currentColor"

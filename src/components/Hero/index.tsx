@@ -40,37 +40,37 @@ const Hero: React.FC<HeroProps> = ({
   return (
     <main
       style={bgPrimaryStyle}
-      className="flex flex-col lg:flex-row justify-center items-center px-12 py-24"
+      className="flex flex-col items-center justify-center px-12 py-24 lg:flex-row"
     >
-      <div className="basis-full md:basis-1/4 py-6">
+      <div className="basis-full py-6 md:basis-1/4">
         <img
           src={filteredInformation[0]?.partnerPhoto?.url}
           alt={filteredInformation[0]?.name}
           sizes="(max-width: 800px) 100vw, 620px"
           loading="eager"
-          className={`mx-auto rounded-full border-2 border-${filteredInformation[0]?.primaryColor}`}
+          className={`mx-auto rounded-full border-2${filteredInformation[0]?.primaryColor}`}
         />
-        <p className="mt-8 text-sky-300 text-lg uppercase">
+        <p className="mt-8 text-lg uppercase text-sky-300">
           {filteredInformation[0]?.name}
         </p>
         <small className="text-base">{filteredInformation[0]?.title}</small>
       </div>
 
-      <div className="basis-full md:basis-3/4 px-4">
+      <div className="basis-full px-4 md:basis-3/4">
         <div className="basis-11/12">
           <h1
             style={stylesHeaderOne}
-            className="my-6 text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter"
+            className="my-6 text-5xl font-bold lg:text-6xl lg:tracking-tight xl:text-7xl xl:tracking-tighter"
           >
             {filteredInformation[0]?.slogan}
           </h1>
           <p
             style={stylesParagraph}
-            className="md:columns-2 mx-auto text-lg mt-4 max-w-4xl text-justify"
+            className="mx-auto mt-4 max-w-4xl text-justify text-lg md:columns-2"
           >
             {filteredInformation[0]?.summary}
           </p>
-          <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center text-yellow-400">
+          <div className="mt-6 flex flex-col justify-center gap-3 text-yellow-400 sm:flex-row">
             <a
               href={filteredInformation[0]?.linkedin}
               target="_blank"
@@ -82,7 +82,7 @@ const Hero: React.FC<HeroProps> = ({
             <a
               rel="noopener"
               href={filteredInformation[0]?.github}
-              className="flex gap-1 items-center justify-center"
+              className="flex items-center justify-center gap-1"
               target="_blank"
             >
               <GitHub />
