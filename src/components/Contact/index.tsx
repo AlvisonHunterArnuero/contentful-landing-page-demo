@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <div className="container mx-auto my-4 px-12">
-      <section className="mb-32 text-center text-gray-800 lg:text-left">
+    <div className="container mx-auto bg-neutral-200 px-12">
+      <section className="text-center text-gray-800 lg:text-left">
         <div
           className="px-6 py-12 md:px-12"
         >

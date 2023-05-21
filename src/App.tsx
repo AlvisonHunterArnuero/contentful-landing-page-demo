@@ -42,11 +42,6 @@ function App() {
       })
   }, [])
 
-  // http://localhost:5173/?id=4WNlCf9gWzJMMYMyMtPfm6
-  // http://localhost:5173/?id=5Z5ofAOLbRL9FJWVG6C1Eo
-  // http://localhost:5173/?id=21t4SuBA08L9J2d1WNy8Ep
-  // http://localhost:5173/?id=17dwgHL9EADVXqZaE7fSyG
-
   const partnerID = id !== null ? id : '17dwgHL9EADVXqZaE7fSyG'
 
   const filteredInfoArr: filteredInfo[] = data?.filter((partner) => {
